@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Pizza Restaurant</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="./style/icomoon.css">
+    <link rel="stylesheet" href="./style/card.css">
+    <link rel="stylesheet" href="./style/hamburger.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./scripts/hamburger.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="hamburger-row">
+                <a class="logo__container" href="./index.html"><img class="logo" src="./img/logo.png"
+                        alt="Fresh Pizza Restaurant logo"></a>
+                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <nav class="hamburger-nav hamburger-zone">
+                <ul>
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#location">Kde nás najdete</a>
+                    </li>
+                    <li>
+                        <a href="#about">O nás</a>
+                    </li>
+                    <li>
+                        <a href="http://www.freshpizza.cz/index.php">Web restaurace</a>
+                    </li>
+                    <li class="navigation__info">
+                        <div>
+                            <a href="tel:778444844"><span class="icon-phone-call"></span>778 444 844</a>
+                            <a><span class="icon-clock"></span>11:00-22:00</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav__close hamburger-btn hamburger-zone"></div>
+        </div>
+    </header>
+    <main>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="./img/background1.jpg" loading="lazy" alt="background-image">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="./img/background2.jpg" loading="lazy" alt="background-image">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="./img/background3.jpg" loading="lazy" alt="background-image">
+                    </li>
+                </ul>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
+                            class="icon-arrow_back_ios"></span></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span
+                            class="icon-arrow_forward_ios"></span></button>
+                </div>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+        </div>
+        <div id="welcome">
+            <h1>Fresh Pizza přehrada Fojtka</h1>
+
+            <div class="button" style="padding: 1em 1em; border-radius: 2em;">
+                <span class=" icon-cart"></span>
+                <p>Objednat</p>
+            </div>
+        </div>
+
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu__container">
+                <div class="card">
+                    <figure class="card__container">
+                        <img class="card__img" src="./img/kebab.jpg" alt="Kebab">
+                    </figure>
+                    <div class="card__description">
+                        <div class="card__description--top">
+                            <h3>Döner Kebab</h3>
+                            <p>105 Kč</p>
+                        </div>
+                        <div class="card__description--bottom">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                            </p>
+                            <div class="button">
+                                <span class=" icon-cart"></span>
+                                <p>Objednat</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="location" class="section section__gmap">
+            <div class="section__grid--left">
+                <h2>Kde nás najdete</h2>
+                <p>Fresh Pizza Fojtka<br>
+                    Na přehradě Fojtka v Mníšku u Liberce<br>
+                    rezervace : <a href="tel: +420 778 444 844">+420 778 444 844</a><br>
+                    Rozvoz pizza Fojtka <a href="tel: +420 778 444 844">+420 778 444 844</a><br>
+                    provozovatel : Kunc Aleš ič : 70219401 tel :<a href="tel: 775 444 797"> 775 444 797</a><br>
+                    email : <a href="mailto: info@freshpizza.cz">info@freshpizza.cz</a> web : <a
+                        href="www.freshpizza.cz">www.freshpizza.cz</a> ID
+                    datová
+                    schránka : 6qtjhxv</p>
+            </div>
+            <div class="section__grid--right">
+                <iframe class="gmap" style="border:0" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJh39JNwwxCUcR8I4xEAIISeg&key=AIzaSyADiAnccdTem49t6_9dnKfuK-pPkkPzeO8"></iframe>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="section__grid--right">
+                <h2>O nás</h2>
+                <p><br>ROZVOZ PIZZY <a href="tel:+420 778444844">+420 778 444 844</a><br>Vážení návštěvníci, vítáme Vás
+                    na
+                    stránkách naší restaurace Fresh
+                    pizza Fojtka, která se nachází na přehradní nádrži Fojtka v Mníšku u Liberce.<br> <br>
+                    <b>Fresh Pizza Fojtka</b><br>V prostorách restaurace pro Vás rádi připravíme akce všeho druhu,
+                    večírky, svatby, firemní
+                    a rodinné oslavy.  V letních měsících je v provozu teráska. U restaurace je možnost využítí koupaní
+                    v přehradní nádrži Fojtka. <br>Rozvoz pizzy Fojtka<br>Rozvoz pizzy zdarma.<br>Při objednávce uveďte
+                    <b>jméno, adresu a telefonní číslo</b>.<br>Při placení můžete využít stravenky (SODEXHO, GASTRO
+                    PASS,
+                    TICKET RESTURANT, CHÉQUE DEJENEUR)<br>Při platbě stravenkami vracíme hotovost.<br>Objednávky na
+                    přehradě Fojtka příjímáme do 22:00 hod. na telefoním čísle <a href="tel:+420 778444844">+420 778 444
+                        844</a><br>Fresh pizza a její
+                    kolektiv přeje dobrou chuť. 😊<br> <br>
+                </p>
+            </div>
+            <div class="section__grid--left">
+                <figure class="section__imgcontainer">
+                    <img src="./img/aboutus.jpg" loading="lazy" alt="Restaurace na přehradě">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div>
+                <h3>Objednat</h3>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#location">Kde nás najdete</a></li>
+                    <li><a href="#" onclick="buttons.open()">Objednat jídlo</a></li>
+                    <li>
+                        <figure>
+                            <img src="./img/iconcartmini.png" alt="Cart">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kontaktní informace</h3>
+                <ul>
+                    <li>
+                        <p>Fresh Pizza Fojtka</p>
+                    </li>
+                    <li>
+                        <p>Přehrada Fojtka Mníšek u Liberce</p>
+                    </li>
+                    <li>
+                        <p>Objednání Pizzy: <a href="tel:+420 778 444 844">+420 778 444 844</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Otevírací doba</h3>
+                <p>Pondělí - Úterý: 11:00 - 22:00<br>
+                    Středa - Pátek: 11:00 - 22:00<br>
+                    Sobota: 11:00 - 22:00<br>
+                    Neděle: 11:00 - 22:00</p>
+            </div>
+            <div class="social">
+                <h3>Sociální sítě</h3>
+                <div>
+                    <a href="https://www.instagram.com/freshpizzafojtka/" target="_blank"><span
+                            class="icon-instagram"></span></a>
+                    <a href="https://www.facebook.com/Fresh-Tenis-Restaurant-146066442123106/?fref=ts"
+                        target="_blank"><span class="icon-facebook"></span></a>
+                </div>
+            </div>
+        </div>
+        <h4>by Vojtěch Suchánek</h4>
+    </footer>
+    <!-- Invisible button -->
+    <div class="glf-button" style="display: none;" data-glf-cuid="9f726307-7ae6-4889-899c-775ab8923c58"
+        data-glf-ruid="908f1f78-b46c-4d88-8e22-773a28189d14" data-glf-auto-open="false">
+        <span class="icon-cart"></span>
+        <p>Objednat</p>
+    </div>
+</body>
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+<script>
+    new Glide('.glide', {
+        autoplay: 5000,
+    }).mount()
+</script>
+<!-- <script src="./scripts/script.js" defer async></script> -->
+<script src="./scripts/script.js"></script>
+<script src="https://www.foodbooking.com/widget/js/ewm2.js" defer async></script>
+
+</html>
